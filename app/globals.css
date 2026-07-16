@@ -1,0 +1,154 @@
+/* ponytail: plain CSS reset + typography, no framework. Dieter iterates
+   polish on top of this (wallet brief constraint: don't gold-plate the UI). */
+
+:root {
+  color-scheme: light;
+  --border: #d9d9d9;
+  --muted: #666;
+  --bg: #fafafa;
+  --card: #fff;
+  --danger: #a6280f;
+  --ok: #1a7f37;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.45;
+}
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+h3 {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  margin: 16px 0 6px;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 2px;
+}
+
+.subhead {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0 0 24px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+.action-card {
+  border-color: #111;
+  border-width: 2px;
+}
+
+.checked-at,
+.limitation {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.checked-at {
+  margin: -16px 0 24px;
+}
+
+.limitation {
+  margin: 12px 0 0;
+}
+
+.aggregate {
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.anomaly-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.anomaly-list li {
+  padding: 4px 0;
+  border-top: 1px solid var(--border);
+}
+
+.anomaly-list li:first-child {
+  border-top: none;
+}
+
+.balances {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.balances th,
+.balances td {
+  text-align: left;
+  padding: 4px 8px 4px 0;
+}
+
+.balances th:not(:first-child),
+.balances td:not(:first-child) {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.pos {
+  color: var(--ok);
+}
+
+.neg {
+  color: var(--danger);
+}
+
+button {
+  font: inherit;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 13px;
+}

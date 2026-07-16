@@ -1,0 +1,11 @@
+.git
+.worktrees
+.next
+.state
+contracts/cache
+contracts/out
+dist
+node_modules
+*.log
+.env
+.env.local

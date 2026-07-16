@@ -1,0 +1,38 @@
+{
+  "name": "walletbrief-monad",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Persistent Monad wallet briefs with human-approved, revoke-only EIP-7702 execution.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit false --outDir dist",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:integration": "RUN_ANVIL_INTEGRATION=1 vitest run test/execute.integration.test.ts",
+    "smoke:read": "tsx scripts/smoke-read.ts",
+    "dev": "next dev --webpack",
+    "web:build": "next build --webpack",
+    "start": "next start"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "viem": "^2.55.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^4.1.10"
+  },
+  "overrides": {
+    "postcss": "8.5.19"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+notes/T1-tx.md.local
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+*.log
+.DS_Store
+.state/
+.next/
+*.tsbuildinfo
+.env.local
+.worktrees/
+.claude/
+docs/superpowers/
+notes/
