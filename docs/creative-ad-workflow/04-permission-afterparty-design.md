@@ -39,34 +39,34 @@ This borrows four useful patterns from the Marketing Lab without copying a sourc
 
 ## Locked narration
 
-> The dapp party ends. Some token permissions don't.
+> The dapp party ends. Some permissions don't.
 >
-> One swap. One mint. One approval. Then the tab closes, but the allowance can stay open.
+> You swap, mint, approve, then close the tab. But the allowance can stay open.
 >
 > Weeks later, finding it means contract addresses, explorer tabs, and guesswork.
 >
-> WalletBrief changes that.
+> WalletBrief makes it simple.
 >
-> Paste any Monad address. It scans indexed Approval events, checks each allowance onchain, and shows what's still active.
+> Paste any Monad address. It scans the approval history, checks what's still active onchain, and puts it all in one place.
 >
-> If something should go, connect the owner. WalletBrief simulates the revoke before you sign.
+> See something you don't need? Connect the wallet that owns it. WalletBrief simulates the revoke before you sign.
 >
-> The party can be messy. Your permissions don't have to be.
+> The party can be messy. Cleaning up your permissions shouldn't be.
 >
 > WalletBrief. See what stayed after the party.
 
-The script is 88 words. At 145 words per minute it runs about 36 seconds before natural pauses. Use Gabe's already approved, consented voice clone; do not retrain or reclone it for this film.
+The script is 93 words. At 145 words per minute it runs about 38 seconds before natural pauses. Use Gabe's already approved, consented voice clone; do not retrain or reclone it for this film.
 
 ## Beat sheet
 
 | Time | Picture | Voice-over | Sound and motion |
 | --- | --- | --- | --- |
-| 0:00–0:03 | Empty club at dawn. One discarded translucent wristband pulses beside confetti. Deterministic title: **THE PARTY ENDS.** | “The dapp party ends. Some token permissions don't.” | Muffled bass from another room, HVAC room tone, one scanner chirp. Slow push-in; one focal object. |
-| 0:03–0:08 | The abandoned wristband passes near an access reader; the empty gate unlocks. Deterministic line: **SOME PERMISSIONS DON'T.** | “One swap. One mint. One approval. Then the tab closes, but the allowance can stay open.” | Three tactile clicks land on swap / mint / approval. Gate unlock is the fourth beat. No generated text. |
+| 0:00–0:03 | Empty club at dawn. One discarded translucent wristband pulses beside confetti. Deterministic title: **THE PARTY ENDS.** | “The dapp party ends. Some permissions don't.” | Muffled bass from another room, HVAC room tone, one scanner chirp. Slow push-in; one focal object. |
+| 0:03–0:08 | The abandoned wristband passes near an access reader; the empty gate unlocks. Deterministic line: **SOME PERMISSIONS DON'T.** | “You swap, mint, approve, then close the tab. But the allowance can stay open.” | Three tactile clicks land on swap / mint / approve. Gate unlock is the fourth beat. No generated text. |
 | 0:08–0:12 | Scanner ring fills frame and match-cuts to the WalletBrief address field. A real address is pasted. | “Weeks later, finding it means contract addresses, explorer tabs, and guesswork.” | Bass cuts dry on the match. Cursor click and short data sweep. Product appears before 12 seconds. |
-| 0:12–0:21 | Real WalletBrief results resolve: balances, transaction count, latest block, then approval scan. | “WalletBrief changes that. Paste any Monad address.” | Fast ease-out entrances, 160–220 ms. Metrics land sequentially, never all at once. |
-| 0:21–0:31 | Real active approval row, current allowance, owner match, simulation, and owner-signature boundary. | “It scans indexed Approval events, checks each allowance onchain, and shows what's still active. If something should go, connect the owner.” | Hold two beats before the revoke action. One restrained impact on successful simulation; no spring or deformation. |
-| 0:31–0:39 | Real no-active-approvals state and explorer proof. The wristband's light goes dark. End card: **WALLETBRIEF / SEE WHAT STAYED AFTER THE PARTY.** | “WalletBrief simulates the revoke before you sign. The party can be messy. Your permissions don't have to be. WalletBrief. See what stayed after the party.” | Scanner power-down, room tone resolves, restrained Monad-colored end sting. |
+| 0:12–0:21 | Real WalletBrief results resolve: balances, transaction count, latest block, then approval scan. | “WalletBrief makes it simple. Paste any Monad address.” | Fast ease-out entrances, 160–220 ms. Metrics land sequentially, never all at once. |
+| 0:21–0:31 | Real active approval row, current allowance, owner match, simulation, and owner-signature boundary. | “It scans the approval history, checks what's still active onchain, and puts it all in one place. See something you don't need? Connect the wallet that owns it.” | Hold two beats before the revoke action. One restrained impact on successful simulation; no spring or deformation. |
+| 0:31–0:39 | Real no-active-approvals state and explorer proof. The wristband's light goes dark. End card: **WALLETBRIEF / SEE WHAT STAYED AFTER THE PARTY.** | “WalletBrief simulates the revoke before you sign. The party can be messy. Cleaning up your permissions shouldn't be. WalletBrief. See what stayed after the party.” | Scanner power-down, room tone resolves, restrained Monad-colored end sting. |
 
 ## Six-frame previsualization
 

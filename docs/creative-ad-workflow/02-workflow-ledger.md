@@ -74,3 +74,10 @@ This ledger records decisions, evidence, costs, failures, and resumption state. 
 - Gabe selected **The Permission Afterparty**. Marketing Lab patterns adopted: invisible problem, ordinary-action progression, memorable reframe, and real before-and-after proof.
 - The full narration, beat sheet, six-frame previs, deterministic/generative split, safety boundaries, cost gates, and QA gates are recorded in `04-permission-afterparty-design.md`.
 - No generation credits were spent. Final design approval remains required before previs or paid generation.
+
+## 2026-07-19 — Final narration polish
+
+- Caveman found no safe large cut; the narration was already dense.
+- Humanizer converted technical and ad-like phrasing into spoken language while preserving the product claims.
+- The final voice-over is 93 words, approximately 38 seconds at 145 words per minute.
+- The hook and product truth remain unchanged. No generation credits were spent.
