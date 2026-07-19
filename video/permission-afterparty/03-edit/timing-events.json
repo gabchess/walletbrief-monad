@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "required_event_fields": [
+    "id",
+    "kind",
+    "frame",
+    "verified"
+  ],
+  "fps": 30,
+  "events": []
+}

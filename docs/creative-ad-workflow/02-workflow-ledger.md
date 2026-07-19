@@ -66,6 +66,23 @@ This ledger records decisions, evidence, costs, failures, and resumption state. 
 | 2026-07-19 | Higgsfield | Creative-ad generation | 0 credits | Not started |
 | 2026-07-19 | Envio | HyperSync provisioning | No paid generation spend | Enabled; live proof passed |
 
+## 2026-07-19 — Production kickoff
+
+- Gabe approved the complete Permission Afterparty design and authorized the video build.
+- Production project created at `video/permission-afterparty` for X, 1920×1080, 30 fps, social duration.
+- Clean baseline passed: 162 tests passed, 1 skipped; TypeScript build passed.
+- Live Higgsfield account verified on Plus with 819.56 credits before generation.
+- Live routing selected `soul_location` for the text-only venue frame and Seedance 2.0 as the quality motion lane, subject to exact cost preflight.
+- No generation credits spent yet.
+
+## 2026-07-19 — First continuity frame and real product proof
+
+- Higgsfield Soul Location quote: `0.12` credits exact for one 16:9 still; one generation submitted under Gabe's approved build scope.
+- The environment mood passed. The foreground object read as a glow stick, not a wristband, and the gate was too soft to carry the metaphor.
+- Decision: retain the still as the environment plate; build the wristband, reader, and scanner ring deterministically. No paid retry or variant.
+- Captured the live WalletBrief address/result frame and current no-active-approvals state.
+- Captured the existing verified MonadVision WMON grant and revoke receipts. No new mainnet transaction was sent.
+
 ## 2026-07-19 — Copy and creative-design audit
 
 - Caveman found the product UI already dense enough to resist broad compression. The hero was rewritten for a more concrete benefit: “See what your wallet still allows.”

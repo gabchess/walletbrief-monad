@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "status": "not_run",
+  "master": null,
+  "checks": [],
+  "manual_review": [],
+  "delivery_manifest": {
+    "masters": []
+  },
+  "publication_action": "none",
+  "waivers": []
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "required_asset_fields": [
+    "id",
+    "path",
+    "sha256",
+    "rights",
+    "provenance"
+  ],
+  "assets": [
+    {
+      "id": "afterparty-location-source-v1",
+      "path": "02-source/cinematic/afterparty-location-source-v1.png",
+      "sha256": "19a5ec25b67e5668bfb7ad110c424dd35442f22d1fc4aa647b90e9a245c75daf",
+      "rights": {"status": "owned", "basis": "Project-owned Higgsfield generation; private production use authorized by Gabe."},
+      "provenance": {"kind": "generated", "origin": "Higgsfield Soul Location, 2048x1152, generated 2026-07-19; retained as environment plate after the foreground object failed the wristband readability gate."},
+      "paid_operation_id": "higgsfield-afterparty-location-v1",
+      "immutable": true
+    },
+    {
+      "id": "walletbrief-live-snapshot",
+      "path": "02-source/product/walletbrief-live-snapshot.png",
+      "sha256": "13adb69e9d5b26ddcdfc6f5eff3fb75494f8e8ac4dea18b7b087004a3871ae63",
+      "rights": {"status": "owned", "basis": "WalletBrief product capture owned by the project."},
+      "provenance": {"kind": "capture", "origin": "Live public WalletBrief deployment captured at 3840x2160 on 2026-07-19."},
+      "immutable": true
+    },
+    {
+      "id": "walletbrief-no-active-live",
+      "path": "02-source/product/walletbrief-no-active-live.png",
+      "sha256": "e4bbd8a03fc82c68f7499edac072a2f2d460cb16ad3e71972f4a40ba55cf970b",
+      "rights": {"status": "owned", "basis": "WalletBrief product capture owned by the project."},
+      "provenance": {"kind": "capture", "origin": "Live public WalletBrief result for the dedicated demo wallet, including current no-active-approvals state; captured at 3840x2160 on 2026-07-19."},
+      "immutable": true
+    },
+    {
+      "id": "monadvision-approval-grant",
+      "path": "02-source/product/monadvision-approval-grant.png",
+      "sha256": "8cc53341b0b9d74745a75f5da748e1ed9722c9eed41e6234c0d770506a5fcfe5",
+      "rights": {"status": "approved", "basis": "Factual public-chain explorer capture for editorial proof; MonadVision page branding remains visible."},
+      "provenance": {"kind": "capture", "origin": "MonadVision mainnet transaction 0x880e68918c5852e4e62da078063469a2d3aa44c1dcc220ffc5ed7dd65eb3a10f, successful 0.01 WMON approval to the inert spender; captured at 2560x1440 on 2026-07-19."},
+      "immutable": true
+    },
+    {
+      "id": "monadvision-approval-revoke",
+      "path": "02-source/product/monadvision-approval-revoke.png",
+      "sha256": "9c1412195b53d25579b5f411c062483e18ac5aba696a2f78d00ff72cb3fbfffc",
+      "rights": {"status": "approved", "basis": "Factual public-chain explorer capture for editorial proof; MonadVision page branding remains visible."},
+      "provenance": {"kind": "capture", "origin": "MonadVision mainnet transaction 0x5e07b37bbbd638460db7a488b0a964062021a7e967b5d398b21a434a1ee804c4, successful revoke setting the same WMON approval to zero; captured at 2560x1440 on 2026-07-19."},
+      "immutable": true
+    }
+  ],
+  "paid_operations": [
+    {
+      "id": "higgsfield-afterparty-location-v1",
+      "provider": "Higgsfield",
+      "model": "soul_location",
+      "quoted_credits_exact": 0.12,
+      "quoted_credits_display": 1,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "retained-environment-plate",
+      "approval": "Gabe approved the video build end to end on 2026-07-19."
+    }
+  ],
+  "immutable_sources_hashed": true
+}

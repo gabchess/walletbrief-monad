@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "required_segment_fields": [
+    "id",
+    "source_id",
+    "source_in_frame",
+    "source_out_frame",
+    "output_in_frame",
+    "output_out_frame"
+  ],
+  "fps": 30,
+  "segments": []
+}

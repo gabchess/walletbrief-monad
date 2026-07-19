@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "required_fields": [
+    "id",
+    "purpose",
+    "time_ceiling_seconds"
+  ],
+  "beats": [
+    {
+      "id": "afterparty-hook",
+      "purpose": "Make the lingering-permission metaphor instantly legible.",
+      "time_ceiling_seconds": 3,
+      "start_seconds": 0,
+      "end_seconds": 3,
+      "picture": "Empty club at dawn; one discarded translucent wristband pulses beside confetti.",
+      "deterministic_text": "THE PARTY ENDS."
+    },
+    {
+      "id": "permission-persists",
+      "purpose": "Show that the session ended while the permission remained.",
+      "time_ceiling_seconds": 5,
+      "start_seconds": 3,
+      "end_seconds": 8,
+      "picture": "The abandoned wristband unlocks an empty access gate.",
+      "deterministic_text": "SOME PERMISSIONS DON'T."
+    },
+    {
+      "id": "scanner-match",
+      "purpose": "Move from metaphor to the real product before 12 seconds.",
+      "time_ceiling_seconds": 4,
+      "start_seconds": 8,
+      "end_seconds": 12,
+      "picture": "Scanner ring fills frame and match-cuts to the real WalletBrief address field."
+    },
+    {
+      "id": "live-snapshot",
+      "purpose": "Prove arbitrary-address wallet inspection on Monad.",
+      "time_ceiling_seconds": 9,
+      "start_seconds": 12,
+      "end_seconds": 21,
+      "picture": "Real WalletBrief search, balances, transaction count, latest block, and approval scan."
+    },
+    {
+      "id": "owner-action",
+      "purpose": "Prove the safe owner-only simulation boundary.",
+      "time_ceiling_seconds": 10,
+      "start_seconds": 21,
+      "end_seconds": 31,
+      "picture": "Real approval row, current allowance, owner match, revoke simulation, and signature boundary."
+    },
+    {
+      "id": "proof-and-cta",
+      "purpose": "Resolve the metaphor with verified no-active state and the product promise.",
+      "time_ceiling_seconds": 8,
+      "start_seconds": 31,
+      "end_seconds": 39,
+      "picture": "Real no-active state and explorer proof; wristband light goes dark; deterministic end card."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 2,
+  "required_scene_fields": [
+    "id",
+    "beat_id",
+    "purpose",
+    "focal_point",
+    "start_frame",
+    "end_frame"
+  ],
+  "tokens": {},
+  "scenes": [],
+  "hero_sequence": null
+}

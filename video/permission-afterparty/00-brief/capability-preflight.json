@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-07-19T17:59:15.667821+00:00",
+  "route": "hybrid",
+  "capabilities": [
+    {
+      "id": "ffmpeg",
+      "state": "available",
+      "evidence": "/opt/homebrew/bin/ffmpeg",
+      "required_for": [
+        "finishing",
+        "qa"
+      ]
+    },
+    {
+      "id": "ffprobe",
+      "state": "available",
+      "evidence": "/opt/homebrew/bin/ffprobe",
+      "required_for": [
+        "finishing",
+        "qa"
+      ]
+    },
+    {
+      "id": "heygen-skills",
+      "state": "available",
+      "evidence": "/Users/gava/.agents/skills/heygen-skills/SKILL.md",
+      "required_for": [
+        "persistent-presenter-generation"
+      ]
+    },
+    {
+      "id": "heygen-mcp-auth-and-api-credits",
+      "state": "deferred",
+      "evidence": "requires an authenticated live MCP check and API pay-as-you-go balance check; no auth was attempted",
+      "required_for": [
+        "persistent-presenter-generation"
+      ]
+    }
+  ],
+  "stage_readiness": {
+    "preproduction": "available",
+    "paid_avatar_production": "deferred",
+    "finishing": "available"
+  },
+  "side_effects": {
+    "installed": false,
+    "authenticated": false,
+    "paid_operations": 0
+  }
+}
