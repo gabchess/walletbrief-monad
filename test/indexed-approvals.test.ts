@@ -4,6 +4,7 @@ import { APPROVAL_EVENT_TOPIC } from "../src/anomalies.js";
 import {
   buildApprovalQuery,
   discoverActiveApprovals,
+  parseApprovalQueryResponse,
   type ApprovalCandidate,
   type ApprovalQueryPage,
   type IndexedApprovalDeps,
@@ -79,6 +80,22 @@ describe("buildApprovalQuery", () => {
           "log_index",
         ],
       },
+    });
+  });
+});
+
+describe("parseApprovalQueryResponse", () => {
+  it("flattens the live HyperSync data-chunk response shape", () => {
+    expect(
+      parseApprovalQueryResponse({
+        archive_height: 300,
+        next_block: 200,
+        data: [{ logs: [approvalLog(10n, 150)] }, {}, { logs: [] }],
+      }),
+    ).toEqual({
+      archiveHeight: 300,
+      nextBlock: 200,
+      logs: [approvalLog(10n, 150)],
     });
   });
 });

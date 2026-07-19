@@ -31,13 +31,23 @@ This ledger records decisions, evidence, costs, failures, and resumption state. 
 - Envio status reported: “HyperSync enabled. Tokens will appear shortly.”
 - Local Keychain service: `walletbrief-hypersync`.
 - Secret-handling rule: the token is copied directly into macOS Keychain and never pasted into chat, committed, written into the vault, or printed by verification commands.
-- Current gate: token row must appear and be saved to Keychain before the live proof runs.
+- Token name in Envio: `Prod`.
+- Keychain presence verified without printing the token.
+
+## 2026-07-19 — live feasibility proof
+
+- First run failed honestly: the adapter decoded HyperSync as `data.logs`, while the live API returns chunked `data[].logs`.
+- A read-only exact-block diagnostic proved the known WMON Approval event was present at block `88,133,622` and transaction `0x880e68918c5852e4e62da078063469a2d3aa44c1dcc220ffc5ed7dd65eb3a10f`.
+- Fixed the response decoder to flatten the live chunk shape and added a regression test using that structure.
+- Targeted approval tests: 7 passed. Typecheck: passed.
+- Corrected live proof: arbitrary-wallet snapshot returned in `701 ms` at block `88,805,231` with five transactions.
+- HyperSync returned two exact seeded-pair events: the grant and later revoke. Current active approvals correctly resolved to zero.
+- Revoke simulation completed in `130 ms` for exact `approve(spender, 0)` calldata. No transaction was sent.
+- Feasibility verdict: all three load-bearing technical claims passed locally. Public Railway verification remains.
 
 ## Pending evidence
 
-- Live arbitrary-wallet latency under five seconds.
-- Live indexed approval discovery without sequential RPC log windows.
-- Live connected-wallet revoke simulation before any signature request.
+- Public Railway deployment of the corrected indexed adapter and runtime token.
 - Rough search-to-result screen played against live data.
 - Human-approved creative concept, storyboard, animatic, cut, sound mix, and final master.
 
@@ -46,5 +56,4 @@ This ledger records decisions, evidence, costs, failures, and resumption state. 
 | Date | Provider | Action | Cost | Status |
 |---|---|---|---:|---|
 | 2026-07-19 | Higgsfield | Creative-ad generation | 0 credits | Not started |
-| 2026-07-19 | Envio | HyperSync provisioning | No paid generation spend | Enabled; token pending |
-
+| 2026-07-19 | Envio | HyperSync provisioning | No paid generation spend | Enabled; live proof passed |

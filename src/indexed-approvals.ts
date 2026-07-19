@@ -44,9 +44,9 @@ const ERC20_INSPECTION_ABI = [
 export interface HypersyncApprovalLog {
   address: Address;
   topic0: Hex;
-  topic1: Hex | null;
-  topic2: Hex | null;
-  topic3: Hex | null;
+  topic1?: Hex | null;
+  topic2?: Hex | null;
+  topic3?: Hex | null;
   data: Hex;
   block_number: number;
   transaction_hash: Hex;
@@ -92,6 +92,26 @@ export interface IndexedApprovalDeps {
     owner: Address,
     candidates: readonly ApprovalCandidate[],
   ) => Promise<CurrentAllowance[]>;
+}
+
+interface HypersyncQueryResponse {
+  archive_height?: number | null;
+  next_block?: number;
+  data?: Array<{ logs?: HypersyncApprovalLog[] }>;
+}
+
+export function parseApprovalQueryResponse(
+  body: HypersyncQueryResponse,
+): ApprovalQueryPage {
+  if (!Number.isSafeInteger(body.next_block)) {
+    throw new Error("HyperSync response did not include next_block.");
+  }
+
+  return {
+    archiveHeight: Number(body.archive_height ?? body.next_block),
+    nextBlock: Number(body.next_block),
+    logs: body.data?.flatMap((chunk) => chunk.logs ?? []) ?? [],
+  };
 }
 
 export function buildApprovalQuery(owner: Address, fromBlock: number) {
@@ -149,20 +169,9 @@ export function makeIndexedApprovalDeps(
         throw new Error(`HyperSync approval query failed (${response.status}).`);
       }
 
-      const body = (await response.json()) as {
-        archive_height?: number | null;
-        next_block?: number;
-        data?: { logs?: HypersyncApprovalLog[] };
-      };
-      if (!Number.isSafeInteger(body.next_block)) {
-        throw new Error("HyperSync response did not include next_block.");
-      }
-
-      return {
-        archiveHeight: Number(body.archive_height ?? body.next_block),
-        nextBlock: Number(body.next_block),
-        logs: body.data?.logs ?? [],
-      };
+      return parseApprovalQueryResponse(
+        (await response.json()) as HypersyncQueryResponse,
+      );
     },
     readCurrentAllowances: async (owner, candidates) => {
       if (candidates.length === 0) return [];

@@ -1,7 +1,7 @@
 # WalletBrief creative-ad workflow
 
 Date: 2026-07-19  
-Status: pre-production; product proof awaiting the provisioned HyperSync token. No generation credits spent.
+Status: live product feasibility proof passed; public deployment verification pending. No generation credits spent.
 
 This folder is the reproducible production record for WalletBrief's crypto-first launch film. It is written so Codex or Claude Code can resume without relying on chat history.
 
@@ -26,7 +26,7 @@ This folder is the reproducible production record for WalletBrief's crypto-first
 
 ## Production state machine
 
-1. **Product proof:** arbitrary address returns useful Monad data quickly; indexed approvals avoid sequential RPC windows; connected-owner revoke simulates before signature.
+1. **Product proof, passed locally:** arbitrary address returns useful Monad data quickly; indexed approvals avoid sequential RPC windows; connected-owner revoke simulates before signature.
 2. **Concept gate:** approve one metaphor, hook, promise, and CTA before any generation.
 3. **Previsualization gate:** approve six storyboard frames and a timed animatic.
 4. **Motion prototype gate:** generate only the selected cinematic shots at 720p, changing one variable per retry.
@@ -40,10 +40,9 @@ Every paid step requires an explicit cost quote and approval. Variant farming is
 ## Resume checklist
 
 1. Retrieve `HYPERSYNC_BEARER_TOKEN` from macOS Keychain service `walletbrief-hypersync`; never print or write it to a file.
-2. Run `npx tsx scripts/prove-feasibility.ts` with the token injected only into that process.
-3. Record latency, indexed-approval evidence, and revoke-simulation evidence in `02-workflow-ledger.md`.
-4. Present two or three concept directions and obtain one explicit human choice.
-5. Do not create a storyboard or spend generation credits before that concept gate passes.
+2. Deploy the proven adapter and secret to Railway, then verify the public arbitrary-wallet path.
+3. Present two or three concept directions and obtain one explicit human choice.
+4. Do not create a storyboard or spend generation credits before that concept gate passes.
 
 ## Arcana and house-rule findings
 
@@ -56,4 +55,3 @@ The Arcana Wiki query returned five relevant rules:
 - `heygen-avatar-video-pipeline`: preserve the two-phase cut-only → overlay gate, even though this film is not an avatar-led product educator.
 
 The locked Product Educator Pipeline v2 contributes two transferable rules: the real product remains the visual evidence, and manual midpoint-frame review is mandatory because ffprobe cannot catch a semantically wrong callout.
-
