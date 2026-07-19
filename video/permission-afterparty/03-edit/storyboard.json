@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "master": {"width": 1920, "height": 1080, "fps": 30},
+  "frames": [
+    {"id": "frame-01-abandoned-wristband", "file": "frames/frame-1.png", "duration_seconds": 3, "source_ids": ["afterparty-location-source-v1"], "purpose": "Establish the empty venue and the lingering-access wristband metaphor."},
+    {"id": "frame-02-gate-unlock", "file": "frames/frame-2.png", "duration_seconds": 5, "source_ids": ["afterparty-location-source-v1"], "purpose": "Deterministic reader and wristband make the still-open permission explicit."},
+    {"id": "frame-03-scanner-match", "file": "frames/frame-3.png", "duration_seconds": 4, "source_ids": ["afterparty-location-source-v1"], "purpose": "Scanner-ring bridge into the real product search."},
+    {"id": "frame-04-live-snapshot", "file": "frames/frame-4.png", "duration_seconds": 9, "source_ids": ["walletbrief-live-snapshot"], "purpose": "Real WalletBrief live snapshot."},
+    {"id": "frame-05-proof-boundary", "file": "frames/frame-5.png", "duration_seconds": 10, "source_ids": ["monadvision-approval-grant", "monadvision-approval-revoke"], "purpose": "Historical, real explorer proof separated from the current live state; states simulation and owner-signature boundary as deterministic editorial labels."},
+    {"id": "frame-06-current-no-active", "file": "frames/frame-6.png", "duration_seconds": 8, "source_ids": ["walletbrief-no-active-live"], "purpose": "Current live no-active state, extinguished wristband, and CTA."}
+  ]
+}
