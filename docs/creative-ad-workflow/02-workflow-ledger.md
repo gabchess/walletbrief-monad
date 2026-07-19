@@ -83,6 +83,14 @@ This ledger records decisions, evidence, costs, failures, and resumption state. 
 - Captured the live WalletBrief address/result frame and current no-active-approvals state.
 - Captured the existing verified MonadVision WMON grant and revoke receipts. No new mainnet transaction was sent.
 
+## 2026-07-19 — Locked narration source
+
+- Existing approved custom Gabe voice clone found in the live Higgsfield account; no retraining or recloning.
+- Complete 93-word Seed Audio narration quote: `4` credits. One continuous take generated.
+- Source duration: `40.921208 s`, 48 kHz stereo PCM WAV.
+- Deterministic 1.03x tempo conformance: `39.730875 s`, within the approved social-film ceiling. No paid voice variant.
+- Optional Seedance 2.0 5-second 720p motion insert quote: `22.5` credits. Held until the previs gate proves it adds value.
+
 ## 2026-07-19 — Copy and creative-design audit
 
 - Caveman found the product UI already dense enough to resist broad compression. The hero was rewritten for a more concrete benefit: “See what your wallet still allows.”

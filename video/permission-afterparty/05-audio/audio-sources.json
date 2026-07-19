@@ -6,9 +6,27 @@
     "role",
     "rights"
   ],
-  "voice": [],
+  "voice": [
+    {
+      "id": "gabe-permission-afterparty-source-v1",
+      "path": "02-source/voice/gabe-permission-afterparty-source-v1.wav",
+      "role": "locked English narration source",
+      "rights": {"status": "approved", "basis": "Gabe consented to reuse of his approved custom voice clone."},
+      "duration_seconds": 40.921208,
+      "sample_rate": 48000,
+      "channels": 2,
+      "sha256": "33a17ed6b2adf77fee94ddd73438a6cf91e664ac6390b46801c6d5c7fa44e6cf"
+    }
+  ],
   "music": [],
   "sfx": [],
   "cues": [],
-  "mix": {}
+  "mix": {
+    "narration_conformed_path": "05-audio/gabe-permission-afterparty-conformed-v1.wav",
+    "narration_conformed_sha256": "d224e001e6af98785b1e341a0b4b112e28d94348e758ad8f55d3b2b9556f533e",
+    "narration_conformed_duration_seconds": 39.730875,
+    "tempo_ratio": 1.03,
+    "integrated_lufs_target": -16,
+    "true_peak_max_dbfs": -1
+  }
 }

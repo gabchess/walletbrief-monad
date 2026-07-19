@@ -48,6 +48,15 @@
       "rights": {"status": "approved", "basis": "Factual public-chain explorer capture for editorial proof; MonadVision page branding remains visible."},
       "provenance": {"kind": "capture", "origin": "MonadVision mainnet transaction 0x5e07b37bbbd638460db7a488b0a964062021a7e967b5d398b21a434a1ee804c4, successful revoke setting the same WMON approval to zero; captured at 2560x1440 on 2026-07-19."},
       "immutable": true
+    },
+    {
+      "id": "gabe-permission-afterparty-source-v1",
+      "path": "02-source/voice/gabe-permission-afterparty-source-v1.wav",
+      "sha256": "33a17ed6b2adf77fee94ddd73438a6cf91e664ac6390b46801c6d5c7fa44e6cf",
+      "rights": {"status": "approved", "basis": "Gabe explicitly consented to reuse of his approved custom voice clone for this film."},
+      "provenance": {"kind": "synthetic", "origin": "Higgsfield Seed Audio 1.0, one continuous English narration take, 48 kHz stereo WAV, generated 2026-07-19 with the existing approved Gabe voice clone."},
+      "paid_operation_id": "higgsfield-narration-v1",
+      "immutable": true
     }
   ],
   "paid_operations": [
@@ -63,6 +72,19 @@
       "approver": "Gabe",
       "result": "retained-environment-plate",
       "approval": "Gabe approved the video build end to end on 2026-07-19."
+    },
+    {
+      "id": "higgsfield-narration-v1",
+      "provider": "Higgsfield",
+      "model": "seed_audio",
+      "quoted_credits_exact": 4,
+      "quoted_credits_display": 4,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "retained-source-take",
+      "approval": "Gabe approved reuse of the existing voice clone and the complete video build on 2026-07-19."
     }
   ],
   "immutable_sources_hashed": true
