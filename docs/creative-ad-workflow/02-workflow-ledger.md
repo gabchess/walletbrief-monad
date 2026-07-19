@@ -65,3 +65,12 @@ This ledger records decisions, evidence, costs, failures, and resumption state. 
 |---|---|---|---:|---|
 | 2026-07-19 | Higgsfield | Creative-ad generation | 0 credits | Not started |
 | 2026-07-19 | Envio | HyperSync provisioning | No paid generation spend | Enabled; live proof passed |
+
+## 2026-07-19 — Copy and creative-design audit
+
+- Caveman found the product UI already dense enough to resist broad compression. The hero was rewritten for a more concrete benefit: “See what your wallet still allows.”
+- The public README had stale WMON-only language from the earlier batch-executor architecture. It now distinguishes the live arbitrary-address HyperSync path from the separate EIP-7702 mainnet proof.
+- Product test result after copy changes: 162 passed, 1 skipped. Production web build passed.
+- Gabe selected **The Permission Afterparty**. Marketing Lab patterns adopted: invisible problem, ordinary-action progression, memorable reframe, and real before-and-after proof.
+- The full narration, beat sheet, six-frame previs, deterministic/generative split, safety boundaries, cost gates, and QA gates are recorded in `04-permission-afterparty-design.md`.
+- No generation credits were spent. Final design approval remains required before previs or paid generation.

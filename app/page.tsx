@@ -44,10 +44,10 @@ export default async function Page({
 
       <section className="hero">
         <p className="eyebrow">Wallet clarity in seconds</p>
-        <h1>Know what your wallet can do.</h1>
+        <h1>See what your wallet still allows.</h1>
         <p className="hero-copy">
-          Enter any Monad address for a live balance snapshot. Approval
-          discovery and owner-controlled revokes are checked separately.
+          Check any Monad address for live balances and active ERC-20
+          approvals. Revokes are simulated, then signed by the wallet owner.
         </p>
 
         <form className="search" method="get" role="search">
@@ -84,8 +84,8 @@ export default async function Page({
       {brief && <WalletResult brief={brief} />}
 
       <footer>
-        Read-only by default. A revoke is prepared locally, simulated first,
-        and signed only by the wallet owner.
+        Read-only by default. Revokes are simulated first and signed only by
+        the wallet owner.
       </footer>
     </main>
   );

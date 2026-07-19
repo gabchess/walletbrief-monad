@@ -1,7 +1,7 @@
 # WalletBrief creative-ad workflow
 
 Date: 2026-07-19  
-Status: live product and public deployment proof passed; creative concept gate next. No generation credits spent.
+Status: live product and public deployment proof passed; **The Permission Afterparty** selected. Final design approval is the next gate. No generation credits spent.
 
 This folder is the reproducible production record for WalletBrief's crypto-first launch film. It is written so Codex or Claude Code can resume without relying on chat history.
 
@@ -14,6 +14,7 @@ This folder is the reproducible production record for WalletBrief's crypto-first
 - Creative shape: a short cinematic metaphor for invisible token approvals, followed by a deterministic real-product reveal and safe revoke proof.
 - Provider split: Higgsfield may generate cinematic or UGC source shots. Remotion/HyperFrames own UI, typography, diagrams, captions, and motion. FFmpeg owns conformance, audio finishing, and encoded-master QA.
 - Publishing boundary: stop at QA-passed masters plus ready-to-post copy and links. Do not publish or submit.
+- Concept: **The Permission Afterparty**. An empty venue still recognizes discarded access wristbands after the people have gone. The metaphor resolves into a live WalletBrief check and owner-controlled revoke proof.
 
 ## Canonical artifacts
 
@@ -27,7 +28,7 @@ This folder is the reproducible production record for WalletBrief's crypto-first
 ## Production state machine
 
 1. **Product proof, passed locally and publicly:** arbitrary address returns useful Monad data quickly; indexed approvals avoid sequential RPC windows; connected-owner revoke simulates before signature.
-2. **Concept gate:** approve one metaphor, hook, promise, and CTA before any generation.
+2. **Concept gate, passed:** The Permission Afterparty; “The dapp party ends. Some token permissions don't.”
 3. **Previsualization gate:** approve six storyboard frames and a timed animatic.
 4. **Motion prototype gate:** generate only the selected cinematic shots at 720p, changing one variable per retry.
 5. **Cut-only gate:** assemble the metaphor, live product capture, and CTA with no captions, music, or finishing.
@@ -40,8 +41,8 @@ Every paid step requires an explicit cost quote and approval. Variant farming is
 ## Resume checklist
 
 1. Retrieve `HYPERSYNC_BEARER_TOKEN` from macOS Keychain service `walletbrief-hypersync`; never print or write it to a file.
-2. Present two or three concept directions and obtain one explicit human choice.
-3. Do not create a storyboard or spend generation credits before that concept gate passes.
+2. Read `04-permission-afterparty-design.md` and obtain final design approval.
+3. Do not spend generation credits before that approval.
 
 ## Arcana and house-rule findings
 

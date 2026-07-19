@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "WalletBrief — Monad wallet clarity",
   description:
-    "Check any Monad wallet, understand its live state, and safely revoke token approvals.",
+    "Check any Monad wallet, see active token approvals, and simulate owner-signed revokes.",
 };
 
 export default function RootLayout({

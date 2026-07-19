@@ -1,11 +1,11 @@
 # WalletBrief creative brief
 
 Date: 2026-07-19  
-Status: audience and production architecture locked; concept not yet chosen.
+Status: audience, production architecture, and concept locked; final design approval pending.
 
 ## Goal
 
-Make crypto users feel the risk of invisible token approvals, then show that WalletBrief turns that uncertainty into one clear check and a safe action.
+Make lingering token approvals instantly legible without fearmongering, then show that WalletBrief turns uncertainty into one clear check and an owner-controlled action.
 
 ## Audience
 
@@ -15,7 +15,13 @@ Secondary: Monad/Spark judges evaluating usefulness, execution quality, and chai
 
 ## Single promise
 
-See what your wallet has exposed. Understand it quickly. Revoke deliberately.
+See what your wallet still allows. Revoke only what you choose.
+
+## Selected concept
+
+**The Permission Afterparty**
+
+An empty venue still recognizes discarded access wristbands after the people have gone. The hook is: “The dapp party ends. Some token permissions don't.” The image makes persistence visible; the live product proves the solution.
 
 ## Proof hierarchy
 
@@ -46,5 +52,4 @@ See what your wallet has exposed. Understand it quickly. Revoke deliberately.
 
 ## Next human gate
 
-Choose one of two or three concept directions. Only the approved direction advances to hook, script, six-frame storyboard, and costed shot manifest.
-
+Approve the written Permission Afterparty design. Only then may the workflow advance to the six-frame storyboard, animatic, and costed shot manifest.

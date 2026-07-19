@@ -1,12 +1,12 @@
 # WalletBrief
 
-WalletBrief turns a Monad wallet's raw on-chain activity into a short, persistent brief: current MON and WMON value, change since the last check, recent activity, and a narrow signal for WMON approvals that may still be open.
+WalletBrief checks any Monad address and returns a live snapshot: MON and WMON balances, transaction count, latest block, and current ERC-20 approvals discovered through HyperSync.
 
-When it finds a tracked stale approval, WalletBrief prepares one human-approved batch revoke. The browser never supplies calldata or chooses a contract target. The server rereads the wallet, rebuilds the revoke set, and submits only exact `approve(spender, 0)` calls through a locked-down EIP-7702 executor.
+If the connected browser wallet owns an active approval, WalletBrief simulates an exact `approve(spender, 0)` revoke before requesting its signature. It never asks a server to sign for the user.
 
 ## Status
 
-The application, contract, stateful container, and safety tests pass. The executor is deployed and source-verified on Monad mainnet. A real WMON approval was detected, revoked through the EIP-7702 executor, and reduced to a verified no-op on the public app.
+The public search-and-revoke app is live. The repository also includes a stricter EIP-7702 batch-executor proof, deployed and source-verified on Monad mainnet. A real WMON approval was detected, revoked through that executor, and reduced to a verified no-op.
 
 | Proof | Link |
 | --- | --- |
@@ -19,7 +19,7 @@ The application, contract, stateful container, and safety tests pass. The execut
 ## Three-minute judge path
 
 1. Open the hosted app and check the timestamp, wallet link, block link, balances, and change since the previous run.
-2. Confirm the current action is **Nothing to revoke** and read the explicit WMON scan-window limitation.
+2. Confirm the indexed approval scan resolves to the wallet's current active approvals or a clear no-active-approvals state.
 3. Open the approval seed and successful revoke transactions above. The revoke emits `Approval(owner, spender, 0)`.
 4. Read the measured deployment, allowance, delegation, no-op, and restart evidence in [docs/mainnet-proof.md](docs/mainnet-proof.md).
 5. Refresh the app. Persistent cursors keep the result fast, and no second transaction is proposed.
@@ -27,15 +27,14 @@ The application, contract, stateful container, and safety tests pass. The execut
 ## How it works
 
 ```text
-Monad RPC
-  -> bounded incremental scans per wallet
-  -> MON + WMON balances and USD prices
-  -> persisted snapshot diff and rule-based signals
-  -> server-recomputed stale WMON revoke set
-  -> one human approval
-  -> EIP-7702 wallet self-call
-  -> BatchExecutor validates approve(spender, 0) only
-  -> receipt and explorer evidence
+Address search
+  -> four parallel read-only Monad calls
+  -> live MON + WMON balances, transaction count, latest block
+  -> HyperSync indexes Approval events for the owner
+  -> Multicall verifies each current on-chain allowance
+  -> connected owner selects an active approval
+  -> wallet simulates approve(spender, 0)
+  -> owner signs and receives explorer evidence
 ```
 
 WalletBrief keeps separate cursors for balance activity and approval signals. A wallet without a cursor starts from `SCAN_START_BLOCK` when configured, or from a bounded 25,000-block lookback. Successful checks persist a new valued snapshot, so the next run reports the change since that check rather than pretending to calculate lifetime profit and loss.
@@ -44,7 +43,9 @@ Price reads use CoinGecko first and DefiLlama as a fallback. One wallet failure 
 
 ## Revoke safety model
 
-The revoke path has two independent boundaries:
+The public app permits one narrow action: the connected owner can set a discovered ERC-20 allowance to zero. The wallet must match the indexed approval's owner, and the exact write is simulated before signature.
+
+The separate EIP-7702 proof path has two additional boundaries:
 
 - The client sends only a configured wallet address. The server rereads live state and rebuilds the action, digest, implementation address, and calldata.
 - `BatchExecutor` accepts calls only from the delegated wallet itself. Every target must contain code, every payload must be exactly ERC-20 `approve(address,uint256)`, and the amount must be zero. Used digests cannot be replayed.
@@ -113,7 +114,7 @@ The contract suite covers self-only access, exact revoke validation, replay prot
 
 ## Honest limitations
 
-- Approval detection is intentionally narrow: it tracks WMON inside the configured scan window. It is not a full wallet security scanner.
+- Approval discovery covers standard ERC-20 `Approval` events indexed by owner. Nonstandard tokens and permissions outside ERC-20 allowances are out of scope; this is not a full wallet security scanner.
 - "Stale" means a live nonzero tracked approval with no observed drawdown in WalletBrief's available history. It is a rule-based signal, not proof of malicious intent.
 - USD values depend on external price APIs and are informational.
 - Snapshot change is the delta since WalletBrief's previous successful check, not tax accounting or lifetime P&L.

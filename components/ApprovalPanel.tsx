@@ -46,7 +46,7 @@ export function ApprovalPanel({ owner }: { owner: Address }) {
     return <ApprovalState title="Approval scan unavailable" detail={state.message} tone="warning" />;
   }
   if (state.approvals.length === 0) {
-    return <ApprovalState title="No active ERC-20 approvals found" detail="The indexed scan found no nonzero allowances for this address." tone="safe" />;
+    return <ApprovalState title="No active ERC-20 approvals found" detail="The indexed scan found no active allowances for this address." tone="safe" />;
   }
 
   return (
