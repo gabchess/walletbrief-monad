@@ -47,9 +47,17 @@ This ledger records decisions, evidence, costs, failures, and resumption state. 
 
 ## Pending evidence
 
-- Public Railway deployment of the corrected indexed adapter and runtime token.
-- Rough search-to-result screen played against live data.
 - Human-approved creative concept, storyboard, animatic, cut, sound mix, and final master.
+
+## 2026-07-19 — public deployment proof
+
+- Railway deployment: `6edc786a-fdd0-40a8-9a5a-c4e3db7aaeba`, status `SUCCESS`.
+- Public health: HTTP `200`, Monad chain `143`, `0.477 s` request time.
+- Public approvals API: HTTP `200`, exact demo wallet returned `{"approvals":[]}` in `1.413 s`.
+- Public arbitrary-wallet page: HTTP `200`; server-rendered snapshot returned in `222 ms` during the curl proof and `177 ms` during the browser pass.
+- Browser QA: live MON/WMON/transaction/block values rendered; indexed approval scan resolved to “No active ERC-20 approvals found”; zero browser console errors.
+- Public GitHub `main`: `57402d9`, clean rewritten history preserved; deployed source and tested rescue tree are byte-equivalent.
+- Product feasibility verdict: PASS. The next gate is creative concept selection, not more product engineering.
 
 ## Cost ledger
 
