@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "provider": "Higgsfield",
+  "workspace_scope": "current",
+  "elements": {
+    "nina": {
+      "id": "ca7a24b6-0e32-4a2e-9e52-82fc99bc59c5",
+      "category": "character",
+      "status": "completed",
+      "source_paths": [
+        "reference-crops/nina-party.png",
+        "reference-crops/nina-morning.png"
+      ]
+    },
+    "permission_wristband": {
+      "id": "42c4a882-8e55-4eed-b3f2-94f6b1d0b155",
+      "category": "prop",
+      "status": "completed",
+      "source_paths": [
+        "reference-crops/permission-wristband.png"
+      ]
+    },
+    "afterparty_exit": {
+      "id": "31bcf59e-21fe-4d8b-8298-cb7d244d4877",
+      "category": "environment",
+      "status": "completed",
+      "source_paths": [
+        "reference-crops/afterparty-exit.png"
+      ]
+    },
+    "morning_apartment": {
+      "id": "8fe96816-6042-4abb-9382-33397019d2fd",
+      "category": "environment",
+      "status": "completed",
+      "source_paths": [
+        "reference-crops/morning-apartment.png"
+      ]
+    }
+  },
+  "start_frames": {
+    "party_exit": {
+      "media_id": "ce53c127-2691-4751-a64a-d52f2cf05b01",
+      "path": "start-frames/01-party-exit.png"
+    },
+    "party_exit_retry": {
+      "media_id": "740837b3-15b9-41b6-915b-48cfd7011fe5",
+      "path": "start-frames/01-party-exit-v2-closed-door.png",
+      "changes": "Club door closed, reader dark, exactly one band on Nina's raised right wrist."
+    },
+    "morning_discovery": {
+      "media_id": "62bb820c-9017-4b25-81b8-870dad7e8a93",
+      "path": "start-frames/02-morning-discovery.png"
+    },
+    "resolution_click": {
+      "media_id": "6926619a-0ba2-4ed0-a2dc-29f76c0ff15f",
+      "path": "start-frames/03-resolution-click.png"
+    }
+  },
+  "approved_test_budget": {
+    "model": "Seedance 2.0",
+    "resolution": "720p",
+    "mode": "fast",
+    "sequences": [8, 10, 8],
+    "credits": 91
+  }
+}

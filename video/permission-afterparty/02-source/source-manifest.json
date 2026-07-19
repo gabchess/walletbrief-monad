@@ -57,6 +57,23 @@
       "provenance": {"kind": "synthetic", "origin": "Higgsfield Seed Audio 1.0, one continuous English narration take, 48 kHz stereo WAV, generated 2026-07-19 with the existing approved Gabe voice clone."},
       "paid_operation_id": "higgsfield-narration-v1",
       "immutable": true
+    },
+    {
+      "id": "party-exit-start-frame-v2",
+      "path": "02-source/actor-film/start-frames/01-party-exit-v2-closed-door.png",
+      "sha256": "8b6b785dd1a175c28152c8c198291b54b317ea8a09b1cae017e8a874f9621002",
+      "rights": {"status": "owned", "basis": "Project-owned reference edit; private production use authorized by Gabe."},
+      "provenance": {"kind": "generated-edit", "origin": "OpenAI image edit of the approved party start frame, generated 2026-07-19. The club door is closed, the reader is dark, and Nina has exactly one chartreuse band on her raised right wrist."},
+      "immutable": true
+    },
+    {
+      "id": "party-exit-720p-fast-v1",
+      "path": "02-source/actor-film/tests/01-party-exit-720p-fast.mp4",
+      "sha256": "2295f503fa1a72b0c5b1bed149da0049b06c64594df66e078f1bd8aced4be994",
+      "rights": {"status": "owned", "basis": "Project-owned Higgsfield generation; private production use authorized by Gabe."},
+      "provenance": {"kind": "generated", "origin": "Higgsfield Seedance 2.0 fast, 1280x720, 24 fps, 8.08 seconds, job 11cb02ce-d20c-446f-8430-d8e865775639; rejected because it duplicated the permission wristband and began with the door open."},
+      "paid_operation_id": "higgsfield-seedance-party-test-v1",
+      "immutable": true
     }
   ],
   "paid_operations": [
@@ -85,6 +102,19 @@
       "approver": "Gabe",
       "result": "retained-source-take",
       "approval": "Gabe approved reuse of the existing voice clone and the complete video build on 2026-07-19."
+    },
+    {
+      "id": "higgsfield-seedance-party-test-v1",
+      "provider": "Higgsfield",
+      "model": "Seedance 2.0 fast",
+      "quoted_credits_exact": 28,
+      "quoted_credits_display": 28,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "rejected-continuity-failure",
+      "approval": "Gabe approved the exact 91-credit three-test 720p scope on 2026-07-19."
     }
   ],
   "immutable_sources_hashed": true
