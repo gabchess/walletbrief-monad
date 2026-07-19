@@ -106,3 +106,19 @@ This ledger records decisions, evidence, costs, failures, and resumption state. 
 - Humanizer converted technical and ad-like phrasing into spoken language while preserving the product claims.
 - The final voice-over is 93 words, approximately 38 seconds at 145 words per minute.
 - The hook and product truth remain unchanged. No generation credits were spent.
+
+## 2026-07-19 — Previs rejected; actor-led reset
+
+- Gabe rejected the six-frame previs because it was a product slide sequence, not the requested UGC/Seedance film with actors.
+- All 15 supplied sources were scraped again and checked against the implementation. The source list was complete, but the creative translation failed: the old brief weakened the recurring cast and let product screens take over the cut.
+- The rejected animatic remains in the project as failure evidence. It is not a production reference and must not be repaired or extended.
+- The corrected design is `05-permission-afterparty-actor-film-reset.md`: one locked lead actor, party extras, two reusable locations, one plot-critical wristband, about 75% acted footage, one short product insert, and a deterministic end card.
+- The new direction does not inherit the old paid-generation approval. A new actor-led board and exact Higgsfield quote must pass before spend.
+
+## 2026-07-19 — Actor-film concept board and cost gate
+
+- Created `video/permission-afterparty/03-edit/actor-film-storyboard-v1.png` as an eight-panel actor-led concept board with no Higgsfield generation spend.
+- The board keeps one recurring lead, party extras, a persistent wristband, party exit, morning apartment, laptop interaction, prop payoff, and end-card space. It contains no product slide sequence or generated UI.
+- Live model routing selected Seedance 2.0 over Marketing Studio because the film needs reference continuity and directed scenes, not template UGC.
+- Live quotes: 91 credits for three 720p fast tests (8 + 10 + 8 seconds); 234 credits for matching 1080p standard finals; 325-credit maximum if every test earns a final.
+- Account balance at preflight: 815.44 Plus credits. No video job was submitted.

@@ -17,10 +17,12 @@ Desired feeling: the problem is slightly eerie, the explanation is calm, and the
 
 ## Creative direction
 
-An empty venue after a dapp “party.” One discarded access wristband still opens an empty gate. A circular reader match-cuts into the real WalletBrief address field. Generated footage owns only that metaphor; deterministic tools own all typography, captions, product UI, addresses, and CTA.
+Actor-led UGC/cinematic short. One recurring lead leaves an afterparty with a glowing access wristband. The next morning, the party is over but the band still works. She opens WalletBrief, checks what the wallet still allows, and simulates a revoke. The band goes dark and slips free.
 
-Master: 1920×1080, 16:9, 30 fps, 35–40 seconds. English narration and hand-authored burned-in English captions. Near-black WalletBrief surfaces, restrained chartreuse, secondary Monad purple. No legible generated text or brand marks.
+About 75% of the cut is acted film footage. WalletBrief appears inside the scene, followed by one short full-screen proof insert and one end card. No product carousel or deck of screenshots.
+
+Master: 1920×1080, 16:9, 30 fps, about 34 seconds. English narration and hand-authored burned-in English captions. No actor dialogue, legible generated text, or generated wallet UI. Full direction: `../../../docs/creative-ad-workflow/05-permission-afterparty-actor-film-reset.md`.
 
 ## Rights, budget, and deadline
 
-Gabe has explicitly approved reuse of his existing consented voice clone and approved the video build end to end. Do not retrain or reclone. Paid generation is limited to the planned single still, two short motion inserts, and one narration take; no variants without new approval. Every cost and source license is logged. The workflow ends at a QA-passed master and ready-to-post copy; publishing and submission remain human-only.
+Gabe has explicitly approved reuse of his existing consented voice clone. Do not retrain or reclone. The prior paid-generation approval belonged to the rejected slide-led direction and does not carry into this actor-led reset. Show the new board and exact clip quote before spend. Every cost and source license is logged. The workflow ends at a QA-passed master and ready-to-post copy; publishing and submission remain human-only.

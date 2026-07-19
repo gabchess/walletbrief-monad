@@ -1,7 +1,22 @@
 # WalletBrief Creative Ad Research
 
 Date: 2026-07-19
-Status: evidence synthesis only; no creative direction approved and no generation credits spent.
+Status: all 15 supplied sources re-scraped and checked after the first previs failed the actor-led film brief.
+
+## Correction after the failed previs
+
+The first implementation turned the concept into a six-screen product animatic. That was the wrong reading of the research and the wrong medium. The sources call for a film planned around cast, locations, props, physical action, and camera coverage. Product UI should prove the claim inside that film; it should not become the film.
+
+The corrected production rules are:
+
+1. Actors carry the story. Use one locked lead actor, party extras, and visible physical action across the full arc.
+2. Build the lead, party wardrobe, morning wardrobe, wristband prop, party exit, and apartment as named reusable assets before motion.
+3. Board actor blocking and camera coverage in Popcorn before generating video.
+4. Give each Seedance shot one action, one camera move, and clear physical cause and effect.
+5. Keep about 75% of the cut actor-led. Limit full-screen product proof to one short, legible insert.
+6. Composite the real WalletBrief UI into the actor's screen. Never ask a video model to invent wallet data or interface text.
+7. Use 720p motion tests first. Change one variable per retry. Run 1080p only after the actor, prop, and motion pass.
+8. Do not inherit the old paid-generation approval. Show the new model, clip count, resolution, and exact quote before spending.
 
 ## Decision summary
 
@@ -21,7 +36,7 @@ This creates a bespoke narrative ad without asking a generative video model to r
 
 Higgsfield defines previsualization as the cheap stage for deciding framing, character positions, light direction, and camera coverage. Popcorn can generate an entire storyboard sequence from shared references, while Cinema Studio turns approved panels into shots with explicit lighting, lens, focal length, aperture, and camera movement. The recommended frame count is four for a simple sequence, six for a clear arc, and eight only for a complex multi-beat scene.
 
-WalletBrief implication: approve a six-frame storyboard and animatic before any final video generation. A weak panel is regenerated as a still, not discovered after an expensive motion render.
+WalletBrief implication: approve an eight-panel actor storyboard and timed animatic before final video generation. A weak panel is regenerated as a still, not discovered after an expensive motion render.
 
 Sources: [AI previsualization tools](https://higgsfield.ai/blog/ai-previsualization-tools), [script to storyboard](https://higgsfield.ai/blog/script-to-storyboard-ai).
 
@@ -45,7 +60,7 @@ Sources: [Case 4K workflow](https://higgsfield.ai/blog/case4k), [Cinema Studio 3
 
 The motion guide says believable movement depends less on vague adjectives and more on joint direction, weight transfer, contact with surfaces, material response, and the environment reacting to the action. The failure modes in earlier avatar experiments match the article's warnings: image anchors weaken across angles, missing native lip sync looks dubbed, and high resolution exposes facial and accessory artifacts.
 
-WalletBrief implication: prefer hands, silhouettes, POV shots, environmental reactions, or one brief UGC performance over a recurring full-body hero. Avoid persistent jewelry and other small identity details. This is a cinematic ad, not another talking-head pipeline.
+WalletBrief implication: use a recurring lead actor whose identity, clothing, locations, and wristband prop are locked before motion. Direct weight, contact, reaction, and camera position shot by shot. Avoid decorative jewelry and tiny wardrobe details that do not serve the plot. This is an actor-led film, not a talking head or a product carousel.
 
 Sources: [realistic AI human movement](https://higgsfield.ai/blog/realistic-ai-human-movement), [why AI characters look weird](https://higgsfield.ai/blog/why-ai-characters-look-weird).
 

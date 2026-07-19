@@ -2,7 +2,7 @@
 
 Date: 2026-07-19
 
-Status: design complete; human approval required before production or paid generation
+Status: superseded after the first previs failed the actor-led film brief. Retained as a record; see `05-permission-afterparty-actor-film-reset.md`.
 
 ## Outcome
 
