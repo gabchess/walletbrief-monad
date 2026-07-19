@@ -1,11 +1,43 @@
 {
   "schema_version": 2,
-  "status": "not_run",
-  "master": null,
-  "checks": [],
-  "manual_review": [],
+  "status": "qa-passed-awaiting-human-playback-approval",
+  "master": {
+    "path": "07-handoff/walletbrief-permission-afterparty-master.mp4",
+    "sha256": "f360cdf8a46808f4d93197a9250aa51ab9e14a961914c0de08cf5f9068aedcc9",
+    "bytes": 22524576,
+    "duration_seconds": 39.733008,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "video_codec": "H.264 High",
+    "pixel_format": "yuv420p",
+    "audio_codec": "AAC",
+    "audio_sample_rate_hz": 48000,
+    "audio_channels": 2
+  },
+  "checks": [
+    {"id": "timeline", "status": "passed", "evidence": "1192 frames at 30 fps; 39.733 seconds; 1920x1080."},
+    {"id": "audio-loudness", "status": "passed", "evidence": "-14.6 LUFS integrated, 3.8 LU LRA, -1.0 dBFS true peak."},
+    {"id": "black-gaps", "status": "passed", "evidence": "FFmpeg blackdetect found no black interval of 0.12 seconds or longer."},
+    {"id": "dead-air", "status": "passed", "evidence": "Four 0.50-0.69 second low-level intervals match intentional narration pauses; none create an edit gap."},
+    {"id": "dialogue", "status": "passed", "evidence": "One continuous narration file is used once; no repeated line, overlap, or duplicate source placement."},
+    {"id": "captions", "status": "passed", "evidence": "Every spoken beat has a timecoded lower-third caption inside title-safe bounds."},
+    {"id": "product-truth", "status": "passed", "evidence": "The product insert uses live WalletBrief captures. The MonadVision revoke is labeled as historical proof and shows approve 0 WMON."},
+    {"id": "actor-continuity", "status": "passed", "evidence": "One recurring lead, one chartreuse wristband, natural hands, delayed party unlock, and powered-down resolution."},
+    {"id": "brand-safety", "status": "passed", "evidence": "The incidental laptop logo in the morning source is outside the final crop."}
+  ],
+  "manual_review": [
+    {"id": "contact-sheet", "status": "passed", "artifact": "07-handoff/walletbrief-permission-afterparty-contact-sheet.png"},
+    {"id": "full-playback", "status": "pending-human-approval", "reviewer": "Gabe"}
+  ],
   "delivery_manifest": {
-    "masters": []
+    "masters": [
+      {
+        "path": "07-handoff/walletbrief-permission-afterparty-master.mp4",
+        "sha256": "f360cdf8a46808f4d93197a9250aa51ab9e14a961914c0de08cf5f9068aedcc9",
+        "status": "qa-passed"
+      }
+    ]
   },
   "publication_action": "none",
   "waivers": []

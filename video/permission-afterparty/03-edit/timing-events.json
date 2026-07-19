@@ -7,5 +7,15 @@
     "verified"
   ],
   "fps": 30,
-  "events": []
+  "events": [
+    {"id": "party-reader-anticipation", "kind": "prop-cause", "frame": 205, "verified": true},
+    {"id": "party-door-unlock", "kind": "prop-effect", "frame": 220, "verified": true},
+    {"id": "cut-to-morning", "kind": "scene-cut", "frame": 243, "verified": true},
+    {"id": "walletbrief-search-in", "kind": "product-proof", "frame": 502, "verified": true},
+    {"id": "walletbrief-result-in", "kind": "product-proof", "frame": 577, "verified": true},
+    {"id": "resolution-in", "kind": "scene-cut", "frame": 733, "verified": true},
+    {"id": "wristband-powers-down", "kind": "prop-payoff", "frame": 793, "verified": true},
+    {"id": "historical-revoke-proof-in", "kind": "chain-proof", "frame": 976, "verified": true},
+    {"id": "end-card-in", "kind": "call-to-action", "frame": 1096, "verified": true}
+  ]
 }

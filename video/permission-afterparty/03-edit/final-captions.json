@@ -1,0 +1,18 @@
+[
+  {"start":0.00,"end":1.35,"lines":["The dapp party ends."]},
+  {"start":1.42,"end":3.10,"lines":["Some permissions don't."]},
+  {"start":3.40,"end":6.95,"lines":["You swap, mint, approve,","then close the tab."]},
+  {"start":7.15,"end":9.00,"lines":["But the allowance can stay open."]},
+  {"start":9.40,"end":11.95,"lines":["Weeks later, finding it means","contract addresses,"]},
+  {"start":12.15,"end":13.95,"lines":["explorer tabs, and guesswork."]},
+  {"start":14.25,"end":15.95,"lines":["WalletBrief makes it simple."]},
+  {"start":16.68,"end":18.42,"lines":["Paste any Monad address."]},
+  {"start":18.70,"end":21.05,"lines":["It scans the approval history,"]},
+  {"start":21.00,"end":24.30,"lines":["checks what's still active onchain,","and puts it all in one place."]},
+  {"start":24.40,"end":25.85,"lines":["See something you don't need?"]},
+  {"start":26.25,"end":28.35,"lines":["Connect the wallet that owns it."]},
+  {"start":28.65,"end":31.50,"lines":["WalletBrief simulates the revoke","before you sign."]},
+  {"start":31.90,"end":33.35,"lines":["The party can be messy."]},
+  {"start":33.70,"end":36.05,"lines":["Cleaning up your permissions","shouldn't be."]},
+  {"start":36.45,"end":39.73,"lines":["WalletBrief.","See what stayed after the party."]}
+]

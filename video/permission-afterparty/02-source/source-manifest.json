@@ -74,6 +74,57 @@
       "provenance": {"kind": "generated", "origin": "Higgsfield Seedance 2.0 fast, 1280x720, 24 fps, 8.08 seconds, job 11cb02ce-d20c-446f-8430-d8e865775639; rejected because it duplicated the permission wristband and began with the door open."},
       "paid_operation_id": "higgsfield-seedance-party-test-v1",
       "immutable": true
+    },
+    {
+      "id": "party-exit-1080p",
+      "path": "02-source/actor-film/finals/01-party-exit-1080p.mp4",
+      "sha256": "efe0b736830f0347cf7189e371f9c6757cd087d3979fa6f998a4b6bd7ed3382e",
+      "rights": {"status": "owned", "basis": "Project-owned Higgsfield generation; private production and public hackathon use authorized by Gabe."},
+      "provenance": {"kind": "generated-upscale", "origin": "Seedance 2.0 fast party-exit retry job 45a4c1a8-80c1-4dca-bf42-ab2f02304003, upscaled to 1080p by job d204b63d-43d8-4440-a013-41c47bf315b0."},
+      "paid_operation_id": "higgsfield-upscale-party-v2",
+      "immutable": true
+    },
+    {
+      "id": "morning-discovery-1080p",
+      "path": "02-source/actor-film/finals/02-morning-discovery-1080p.mp4",
+      "sha256": "a55516ef373ccb1e2460ee4b972c9f66e1be8eefc2e5c51b3f5cce29e3147fee",
+      "rights": {"status": "owned", "basis": "Project-owned Higgsfield generation; private production and public hackathon use authorized by Gabe."},
+      "provenance": {"kind": "generated-upscale", "origin": "Seedance 2.0 fast morning-discovery job e7e3dacc-faef-4caa-ae47-cc11287357fa, upscaled to 1080p by job b54f0a4d-e1d2-4e52-bb57-0bd6ffe36a32. The final edit crops out incidental laptop branding."},
+      "paid_operation_id": "higgsfield-upscale-morning-v1",
+      "immutable": true
+    },
+    {
+      "id": "resolution-1080p",
+      "path": "02-source/actor-film/finals/03-resolution-1080p.mp4",
+      "sha256": "2d15054aaec72969fed31dba4b8ae12ba8f76d028eece0393e3edf2aac601b51",
+      "rights": {"status": "owned", "basis": "Project-owned Higgsfield generation; private production and public hackathon use authorized by Gabe."},
+      "provenance": {"kind": "generated-upscale", "origin": "Seedance 2.0 fast resolution job 43979fe6-efec-489b-809e-202f4ee65787, upscaled to 1080p by job 79d670ea-41b1-46c3-b927-bfc80f5c8121."},
+      "paid_operation_id": "higgsfield-upscale-resolution-v1",
+      "immutable": true
+    },
+    {
+      "id": "permission-pulse-original",
+      "path": "05-audio/permission-pulse-original.wav",
+      "sha256": "c73bf6ba3ea092bb8352194e444f38c68a8aed1173200faa76ae616b58a63e4c",
+      "rights": {"status": "owned", "basis": "Generated in-project from FFmpeg sine and noise filters; no third-party recording or stock license."},
+      "provenance": {"kind": "procedural-audio", "origin": "Original 96 BPM-style pulse composed for the final cut."},
+      "immutable": true
+    },
+    {
+      "id": "permission-afterparty-master",
+      "path": "07-handoff/walletbrief-permission-afterparty-master.mp4",
+      "sha256": "f360cdf8a46808f4d93197a9250aa51ab9e14a961914c0de08cf5f9068aedcc9",
+      "rights": {"status": "owned", "basis": "Project master composed from owned and approved source assets."},
+      "provenance": {"kind": "final-master", "origin": "Deterministic FFmpeg and Sharp render, 1920x1080, 30 fps, 39.733 seconds."},
+      "immutable": true
+    },
+    {
+      "id": "permission-afterparty-contact-sheet",
+      "path": "07-handoff/walletbrief-permission-afterparty-contact-sheet.png",
+      "sha256": "6b25eb89c235ee37d5fb68d839dcd2533af3ecce69a2ce7c3768ad8c036084f0",
+      "rights": {"status": "owned", "basis": "QA artifact derived from the project master."},
+      "provenance": {"kind": "qa-artifact", "origin": "Ten-frame visual review sheet sampled from the final master."},
+      "immutable": true
     }
   ],
   "paid_operations": [
@@ -115,6 +166,84 @@
       "approver": "Gabe",
       "result": "rejected-continuity-failure",
       "approval": "Gabe approved the exact 91-credit three-test 720p scope on 2026-07-19."
+    },
+    {
+      "id": "higgsfield-seedance-party-test-v2",
+      "provider": "Higgsfield",
+      "model": "Seedance 2.0 fast",
+      "quoted_credits_exact": 28,
+      "quoted_credits_display": 28,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "retained-final-source",
+      "approval": "Gabe approved the corrected retry and the full video build on 2026-07-19."
+    },
+    {
+      "id": "higgsfield-seedance-morning-v1",
+      "provider": "Higgsfield",
+      "model": "Seedance 2.0 fast",
+      "quoted_credits_exact": 35,
+      "quoted_credits_display": 35,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "retained-with-final-crop",
+      "approval": "Gabe approved the full video build on 2026-07-19."
+    },
+    {
+      "id": "higgsfield-seedance-resolution-v1",
+      "provider": "Higgsfield",
+      "model": "Seedance 2.0 fast",
+      "quoted_credits_exact": 28,
+      "quoted_credits_display": 28,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "retained-final-source",
+      "approval": "Gabe approved the full video build on 2026-07-19."
+    },
+    {
+      "id": "higgsfield-upscale-party-v2",
+      "provider": "Higgsfield",
+      "model": "Bytedance Video Upscale",
+      "quoted_credits_exact": 0.16,
+      "quoted_credits_display": 0.16,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "retained-1080p-source",
+      "approval": "Gabe approved all end-to-end video build costs on 2026-07-19."
+    },
+    {
+      "id": "higgsfield-upscale-morning-v1",
+      "provider": "Higgsfield",
+      "model": "Bytedance Video Upscale",
+      "quoted_credits_exact": 0.2,
+      "quoted_credits_display": 0.2,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "retained-1080p-source",
+      "approval": "Gabe approved all end-to-end video build costs on 2026-07-19."
+    },
+    {
+      "id": "higgsfield-upscale-resolution-v1",
+      "provider": "Higgsfield",
+      "model": "Bytedance Video Upscale",
+      "quoted_credits_exact": 0.16,
+      "quoted_credits_display": 0.16,
+      "count": 1,
+      "status": "completed",
+      "approved": true,
+      "approver": "Gabe",
+      "result": "retained-1080p-source",
+      "approval": "Gabe approved all end-to-end video build costs on 2026-07-19."
     }
   ],
   "immutable_sources_hashed": true

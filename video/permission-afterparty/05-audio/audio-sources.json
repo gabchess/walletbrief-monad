@@ -18,15 +18,51 @@
       "sha256": "33a17ed6b2adf77fee94ddd73438a6cf91e664ac6390b46801c6d5c7fa44e6cf"
     }
   ],
-  "music": [],
-  "sfx": [],
-  "cues": [],
+  "music": [
+    {
+      "id": "permission-pulse-original",
+      "path": "05-audio/permission-pulse-original.wav",
+      "role": "original 96 BPM-style pulse bed",
+      "rights": {"status": "owned", "basis": "Generated in-project from FFmpeg sine and noise filters; no third-party recording or stock license."},
+      "sha256": "c73bf6ba3ea092bb8352194e444f38c68a8aed1173200faa76ae616b58a63e4c"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "party-native-ambience",
+      "path": "02-source/actor-film/finals/01-party-exit-1080p.mp4",
+      "role": "party exit and reader ambience",
+      "rights": {"status": "owned", "basis": "Native audio from the project-owned Higgsfield generation."}
+    },
+    {
+      "id": "morning-native-ambience",
+      "path": "02-source/actor-film/finals/02-morning-discovery-1080p.mp4",
+      "role": "quiet room ambience",
+      "rights": {"status": "owned", "basis": "Native audio from the project-owned Higgsfield generation."}
+    },
+    {
+      "id": "resolution-native-ambience",
+      "path": "02-source/actor-film/finals/03-resolution-1080p.mp4",
+      "role": "tap and room ambience",
+      "rights": {"status": "owned", "basis": "Native audio from the project-owned Higgsfield generation."}
+    }
+  ],
+  "cues": [
+    {"id": "reader-trigger", "frame": 205, "role": "anticipation before the door unlock"},
+    {"id": "wristband-off", "frame": 793, "role": "resolution payoff"},
+    {"id": "end-card", "frame": 1096, "role": "music resolve"}
+  ],
   "mix": {
     "narration_conformed_path": "05-audio/gabe-permission-afterparty-conformed-v1.wav",
     "narration_conformed_sha256": "d224e001e6af98785b1e341a0b4b112e28d94348e758ad8f55d3b2b9556f533e",
     "narration_conformed_duration_seconds": 39.730875,
     "tempo_ratio": 1.03,
     "integrated_lufs_target": -16,
-    "true_peak_max_dbfs": -1
+    "true_peak_max_dbfs": -1,
+    "master_path": "07-handoff/walletbrief-permission-afterparty-master.mp4",
+    "measured_integrated_lufs": -14.6,
+    "measured_loudness_range_lu": 3.8,
+    "measured_true_peak_dbfs": -1.0,
+    "qa_status": "passed"
   }
 }

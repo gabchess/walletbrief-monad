@@ -11,6 +11,7 @@ contracts/broadcast/
 .state/
 .next/
 *.tsbuildinfo
+video/permission-afterparty/03-edit/final-assets/
 .env.local
 .worktrees/
 .claude/

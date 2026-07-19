@@ -9,5 +9,63 @@
     "output_out_frame"
   ],
   "fps": 30,
-  "segments": []
+  "segments": [
+    {
+      "id": "party-exit",
+      "source_id": "party-exit-1080p",
+      "source_in_frame": 0,
+      "source_out_frame": 242,
+      "output_in_frame": 0,
+      "output_out_frame": 242
+    },
+    {
+      "id": "morning-discovery",
+      "source_id": "morning-discovery-1080p",
+      "source_in_frame": 0,
+      "source_out_frame": 258,
+      "output_in_frame": 243,
+      "output_out_frame": 501,
+      "transform": "scale 2304x1296; crop 1920x1080 at x=0 y=108 to remove incidental laptop branding"
+    },
+    {
+      "id": "walletbrief-search",
+      "source_id": "walletbrief-live-snapshot",
+      "source_in_frame": 0,
+      "source_out_frame": 74,
+      "output_in_frame": 502,
+      "output_out_frame": 576
+    },
+    {
+      "id": "walletbrief-result",
+      "source_id": "walletbrief-no-active-live",
+      "source_in_frame": 0,
+      "source_out_frame": 155,
+      "output_in_frame": 577,
+      "output_out_frame": 732
+    },
+    {
+      "id": "resolution",
+      "source_id": "resolution-1080p",
+      "source_in_frame": 0,
+      "source_out_frame": 242,
+      "output_in_frame": 733,
+      "output_out_frame": 975
+    },
+    {
+      "id": "historical-revoke-proof",
+      "source_id": "monadvision-approval-revoke",
+      "source_in_frame": 0,
+      "source_out_frame": 119,
+      "output_in_frame": 976,
+      "output_out_frame": 1095
+    },
+    {
+      "id": "end-card",
+      "source_id": "walletbrief-end-card",
+      "source_in_frame": 0,
+      "source_out_frame": 95,
+      "output_in_frame": 1096,
+      "output_out_frame": 1191
+    }
+  ]
 }
